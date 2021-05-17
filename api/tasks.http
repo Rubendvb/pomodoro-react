@@ -1,0 +1,25 @@
+@api = http://localhost:3000
+
+GET {{api}}/tasks
+
+###
+GET {{api}}/tasks/60a1f974d3dc2319701466f9
+
+###
+POST {{api}}/tasks
+Content-Type: application/json
+
+{
+    "title": "Vender"
+}
+
+###
+DELETE {{api}}/tasks/60a1f916acbedd3fa88ec43c
+
+###
+PUT {{api}}/tasks/60a1f6225da1043fe4e2683f
+Content-Type: application/json
+
+{
+    "title": "Correr"
+}
